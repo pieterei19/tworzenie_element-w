@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dodawanie elementów</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dodawanie elementów</h1>
+      </header>
+      <section>
+        <legend>
+          <label for="elem"
+            >Wybierz element:
+            <select name="elem" id="elemSel">
+              <option value="p">p</option>
+              <option value="div">div</option>
+              <option value="aside">aside</option>
+              <option value="footer">footer</option>
+            </select>
+          </label>
+          <label for="elementText"
+            >Tekst w elemencie:<input
+              type="text"
+              id="elementText"
+              value="przykładowy tekst"
+          /></label>
+          <label for="colorPicker"
+            >Pobierz kolor czcionki:<input type="color" id="colorPicker"
+          /></label>
+          <label for="backgroundPicker"
+            >Wybierz kolor tła:<input
+              type="color"
+              id="backgroundPicker"
+              value="#eeeeee"
+          /></label>
+
+          <div class="where">
+            Gdie umieścić?
+            <label for="mainTarget"
+              >main<input
+                type="radio"
+                id="mainTarget"
+                name="where"
+                value="main"
+                checked /></label
+            ><label for="asideTarget"
+              >aside<input
+                type="radio"
+                id="asideTarget"
+                name="where"
+                value="aside"
+            /></label>
+          </div>
+        </legend>
+        <button>Dodaj element</button>
+      </section>
+
+      <main id="main"></main>
+      <aside id="aside"></aside>
+      <footer>&copy Me</footer>
+    </div>
+  </body>
+</html>
